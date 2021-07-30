@@ -1,0 +1,571 @@
+/******************************
+ *
+ * NAVIGACIJA
+ *
+ ******************************/
+
+ #main-navbar {
+	box-sizing: border-box;
+	/*position: relative;*/
+	width: 90%;
+	margin: auto;
+	background-color: #f4f4c8;
+	/*box-shadow: 2px 4px 4px -4px rgba(0,0,0,0.6);*/
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	border-radius: 8px;
+	box-shadow: rgba(36, 20, 12, 0.15) 0 2px  2px,
+							rgba(36, 20, 12, 0.15) 0 4px  4px,
+							rgba(36, 20, 12, 0.15) 0 8px  8px,
+							rgba(36, 20, 12, 0.10) 0 16px 16px,
+							rgba(36, 20, 12, 0.05) 0 32px 32px;
+							/*rgba(36, 20, 12, 0.15) 0 64px 64px;*/
+	
+	/* Flexbox */
+	display: flex;
+	flex-flow: row;
+	/*justify-content: space-between;*/
+}
+
+/* Navigacioni Linkovi */
+#main-navbar .navigacija {
+	flex-grow: 10;
+	/*justify-content: center;*/
+}
+
+#main-navbar .navigacija,
+#main-navbar .lang {
+	margin: 15px 20px;
+	
+	/* Flexbox */
+	flex-basis: 150px;
+	display: flex;
+}
+
+#main-navbar .navigacija li {
+	
+	/*display: inline-block;*/
+	margin-right: 15px;
+	padding: 0;
+	border: 1px solid rgba(0,0,0,0.05);
+	border-radius: 25px;
+	list-style: none;
+	text-align: center;
+	font-family: 'Proxima Nova Regular', sans-serif;
+	font-size: 1.1em;
+	/*text-transform: uppercase;*/
+	font-variant: small-caps;
+	letter-spacing: .1em;
+	
+	/* Flexbox osobine */
+	/*flex-grow: 1;*/
+}
+
+#main-navbar .navigacija li:hover {
+	border: 1px solid #9ff;
+	background-color: #f4f4c8;
+	box-shadow: 0 5px 4px -4px rgba(0,0,0,0.6),
+				inset 1px 0 2px -1px rgba(0,0,0,0.05);
+	background-image: linear-gradient(#f4f4c8, #efefe6 250%);
+	transition: all 0.3s ease;
+}
+
+#main-navbar .navigacija li a {
+	display: block;
+	text-decoration: none;
+	padding: 15px 50px 15px 50px;
+}
+
+#main-navbar .navigacija li a:link {
+	color: rgb(112,112,112);
+}
+
+#main-navbar .navigacija li a:visited {
+	/*color: #1B1B1E;*/
+	color: rgb(112,112,112);
+}
+
+#main-navbar .navigacija li a:hover {
+	/*display: block;*/
+	color: #0cc;
+	transition: all 0.3s ease;
+}
+
+/* Jezici */
+#main-navbar .lang {
+	flex-grow: 1;
+	justify-content: center;
+}
+
+.lang li {
+	/*display: inline-block;*/
+	list-style-type: none;
+}
+
+.lang li a {
+	display: inline-block;
+	text-decoration: none;
+	width: 40px;
+	height: 20px;
+	color: #fff;
+	padding: 10px;
+	opacity: 0.8;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*transition: transform 0.2s ease-in-out;*/
+
+}
+
+.lang li:first-of-type a {
+	background-image: url('../images/engleski.png');
+}
+
+.lang li:last-of-type a {
+	background-image: url('../images/crnogorski.png');
+}
+
+.lang li:hover a {
+	animation: flip-scale-2-hor-top 0.35s ease-out forwards;
+}
+
+#main-navbar form .search {
+	box-sizing: border-box;
+	padding: 7px;
+	/*margin: 0 8px 2px 5px;*/
+	color: rgb(128,128,128);
+	font-style: italic;
+	border: 2px solid rgb(192,192,192);
+	border-radius: 3px;
+}
+
+#main-navbar form .search:hover {
+	background-color: #edffff;
+	box-shadow: 0 5px 4px -4px rgba(0,0,0,0.6);
+}
+
+#main-navbar form .search:focus {
+	background-color: #dff4f5;
+	/*border: 2px solid #B5F1FF;*/
+	/*box-sizing: border-box;*/
+	box-shadow: 0 5px 4px -4px rgba(0,0,0,0.6);
+}
+
+#main-navbar form .submit-button {
+	background-color: #A1DFE6;
+	display:inline-block;
+	box-sizing: border-box;
+	padding:0.35em 1.2em;
+	border: 0.1em solid rgb(192,192,192);
+	/*margin:0 0.3em 0.3em 0;*/
+	border-radius:0.4em;
+	height: 2.3em;
+	text-decoration: none;
+	font-family: 'Roboto',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	text-align:center;
+	transition: all 0.2s;
+}
+
+#main-navbar form .submit-button:hover {
+	color: rgb(128,128,128);
+	background-color:#FFFFFF;
+	box-shadow: 0 5px 4px -4px rgba(0,0,0,0.6);
+}
+
+#main-navbar form .submit-button:active {
+	color: rgb(64,64,64);
+	background-color: rgb(224,224,224);
+	border-color: #FFFFFF;
+}
+
+#main {
+	/*position: relative;*/
+	margin: auto;
+	list-style: none;
+	margin-bottom: 40px;
+	/*min-width: 700px;*/
+}
+
+#banner,
+#info,
+#projects,
+#contact {
+	margin: 0 0 15px 0;
+	padding: 10px 25px 10px 25px;
+	box-sizing: border-box;
+	box-shadow: rgba(36, 20, 12, 0.25) 0 2px  2px,
+							rgba(36, 20, 12, 0.20) 0 4px  4px,
+							rgba(36, 20, 12, 0.15) 0 8px  8px;
+	background-image: linear-gradient(135deg, #f4f4c8, #efefe6);
+	color: rgb(88,88,88);
+	/*font-family: 'Calluna Sans Regular', sans-serif;*/
+	font-family: 'Raleway', sans-serif;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.slide:hover,
+.slide:focus {
+  border-radius: 50px;
+  box-shadow: inset 11em 0 0 0 var(--hover);
+}
+.slide {
+  --color: #8fc866;
+  /*--hover: #6DD5FA;*/
+  --hover: rgba(255,255,255,0.2);
+}
+.slide {
+  color: var(--color);
+  /*background-image: linear-gradient(red blue);*/
+  transition: 0.25s;
+}
+.slide:hover, .slide:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+/******************************
+ *
+ * BANNER
+ *
+ ******************************/
+
+#banner {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	text-align: center;
+	color: rgb(248,248,248);
+	animation: spustanje 1s ease-out;
+}
+
+#banner h1 {
+	font-family: 'Nexa Rust Script', sans-serif;
+	/*font-family: 'Rolka Light', sans-serif;*/
+	font-weight: 400;
+	font-size: 3.5em;
+	display: inline-block;
+	letter-spacing: 3px;
+	text-shadow: 0  1px  0px #ccc,
+							 0  2px  0px #c9c9c9,
+							 0  3px  0px #bbb,
+							 0  4px  0px #b9b9b9,
+							 0  5px  0px #aaa,
+							 0  6px  1px rgba(0,0,0,.1),
+							 0  0px  5px rgba(0,0,0,.1),
+							 0  1px  3px rgba(0,0,0,.3),
+							 0  3px  5px rgba(0,0,0,.2),
+							 0  5px 10px rgba(0,0,0,.25),
+							 0 10px 10px rgba(0,0,0,.2),
+							 0 20px 20px rgba(0,0,0,.15);
+}
+
+#banner h1 {
+	display: flex;
+	justify-content: center;
+}
+
+#banner span:first-of-type {
+	animation: welcome 0.5s 0.05s;
+}
+
+#banner span:nth-of-type(2) {
+	animation: welcome 0.5s 0.15s;
+}
+
+#banner span:nth-of-type(3) {
+	animation: welcome 0.5s 0.2s;
+}
+
+#banner span:nth-of-type(4) {
+	animation: welcome 0.5s 0.25s;
+}
+
+#banner span:nth-of-type(5) {
+	animation: welcome 0.5s 0.3s;
+}
+
+#banner span:nth-of-type(6) {
+	animation: welcome 0.5s 0.35s;
+}
+
+#banner span:nth-of-type(7) {
+	animation: welcome 0.5s 0.4s;
+}
+
+/******************************
+ *
+ * INFO
+ *
+ ******************************/
+
+#info {
+	/*height: 300px;*/
+	position: relative;
+	text-decoration: none;
+}
+
+/******************************
+ *
+ * PROJECTS
+ *
+ ******************************/
+
+#projects {
+	position: relative;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+#projects h2 {
+	justify-content: flex-start;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.fade-in-element {
+  animation: slide-in-elliptic-left-fwd 1.3s;
+}
+
+#projects .link-u-cosku {
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	margin-bottom: 5px;
+	align-self: center;
+	opacity: 0.85;
+	font-size: 2.5em;
+	cursor: pointer;
+}
+
+#projects .link-u-cosku:hover {
+	text-shadow: -1px -1px  5px rgb(224,224,224);
+}
+
+/*.projekti {
+	display: grid;
+}*/
+
+.prosiri-projekte {
+	animation: prosiri_projekte 0.5s ease-in-out forwards;
+}
+
+.skupi-projekte {
+	animation: skupi_projekte 0.5s ease-in-out reverse;
+}
+
+.gore {
+	animation: gore 0.5s ease-in-out forwards;
+}
+
+.dolje {
+	animation: dolje 0.5s ease-in-out forwards;
+}
+
+/******************************
+ *
+ * CONTACT
+ *
+ ******************************/
+
+#contact {
+	/*height: 500px;*/
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	text-decoration: none;
+	text-align: center;
+}
+
+form input,
+form textarea {
+	border: 1px solid #bbb;
+	font-family: Arial, sans-serif;
+}
+
+form textarea {
+	height: 100px;
+	resize: none;
+}
+
+.input_notification {
+	border-color: #0cc;
+	background-color: #ebffff;
+	box-shadow: 0 0px 5px 1px rgba(0, 204, 204, 0.3);
+	transition: border-color 0.3s ease-in-out,
+							background-color 0.3s ease-in-out,
+							box-shadow 0.3s ease-in-out;
+}
+
+/*Linkovi za Drustvene Mreze*/
+
+.kontakt_linkovi {
+	margin: 25px 0;
+}
+
+.kontakt_linkovi li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.kontakt_linkovi li a {
+	box-sizing: border-box;
+	display: inline-block;
+	/*padding: 15px 15px 0 15px;*/
+	padding: 5px 10px;
+	text-decoration: none;
+	color: inherit;
+	font-family: 'Calluna Sans Bold', sans-serif;
+	font-size: 25px;
+	font-size: 2em;
+	/*transition: transform 0.5s;*/
+}
+
+.codewars svg {
+	width: 30px;
+	height: 25px;
+}
+
+.github:hover {
+	color: #24292e;
+}
+
+.codepen:hover {
+	color: #1e1f26;
+}
+
+.facebook:hover {
+	color: #3E5C9A;
+}
+
+.freecodecamp:hover {
+	color: #006400;
+}
+
+.codewars:hover {
+	color: #ca4c33;
+}
+
+.kontakt_linkovi li a:hover {
+	/*transform: scale(1.5);*/
+	animation: bounce 0.4s forwards;
+}
+
+#message > h3 {
+	position: relative;
+	margin: 15px 0 20px;
+	text-align: center;
+	font-family: 'Open Sans';
+	font-weight: normal;
+	font-size: 1.67em;
+}
+
+#message form {
+	box-sizing: border-box;
+}
+
+::selection {
+	background: #9ff; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+	background: #9ff; /* Gecko Browsers */
+}
+
+/***** CLEARFIX *****/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/******************************
+ *
+ * MEDIA QUERIES
+ *
+ ******************************/
+
+@media only screen and (max-width: 640px) {
+	#banner h2,
+	#info h2,
+	#projects h2,
+	#contact h2 {
+		font-size: 1.4em;
+	}
+
+	#banner p,
+	#info p,
+	#projects p,
+	#contact p {
+		font-size: 1.2em;
+	}
+}
+
+@media only screen and (min-width: 641px) {
+	#banner p,
+	#info p,
+	#projects p,
+	#contact p {
+		font-size: 1.4em;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#main-navbar {
+		position: relative;
+	}
+
+	#main-navbar .navigacija li {
+		display: block;
+		width: 100%;
+		margin: 5px auto;
+	}
+
+	#main-navbar .navigacija li a {
+		/*position: relative;*/
+		text-align: center;
+	}
+
+	#main-navbar form {
+		display: block;
+		/*position: relative;*/
+		width: 90%;
+		margin: 0 auto;
+		/*float: none;*/
+		/*margin-top: 0;*/
+	}
+
+	#main-navbar form input.search {
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+
+	#main-navbar .submit-button {
+		/*display: block;*/
+		width: 100%;
+		margin: 6px 0;
+	}
+
+	#main {
+		width: 90%;
+		margin: auto;
+		padding-top: 25px;
+	}
+
+	#banner h1 {
+		font-size: 1.3em;
+	}
+
+	#message #name,
+	#message #email,
+	#message #send-but,
+	#message #message-area {
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+}

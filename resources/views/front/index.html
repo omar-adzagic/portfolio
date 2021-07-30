@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Portfolio Omar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!-- Custom Stilovi -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animacije.css">
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+	<!-- Google Fontovi -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet"> 
+</head>
+<body>
+
+	<!-- Navigacija -->
+	<header>
+		<nav id="main-navbar" class="group">
+			<ul class="navigacija">
+				<li>
+					<a class="navlinks slide" href="#info"></i> info<span></span></a> <!-- <i class="fas fa-info"> -->
+				</li>
+				<li>
+					<a class="navlinks slide" href="#projects"></i> projects<span></span></a> <!-- <i class="fas fa-folder"> -->
+				</li>
+				<li>
+					<a class="navlinks slide" href="#contact"></i> contact<span></span></a> <!-- <i class="fas fa-address-book"> -->
+				</li>
+				<li>
+					<a class="navlinks slide" href="blog.html"></i> blog<span></span></a> <!-- <i class="fas fa-folder"> -->
+				</li>
+			</ul>
+			
+			<ul class="lang">
+				<li>
+					<a href="#"></a>
+				</li>
+				<li>
+					<a href="#"></a>
+				</li>
+			</ul>
+	<!-- 		<form action="" method="">
+				<input class="search" type="text" placeholder="Search">
+				<button class="submit-button" type="submit"><i class="fas fa-search"></i></button>
+			</form> -->
+		</nav>
+	</header>
+
+	<!-- Main Container -->
+	<main id="main">
+		<!-- Banner -->
+		<section class="main" id="banner">
+			<h1><span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span></h1>
+		</section><!-- #banner -->
+		
+		<!-- Info -->
+		<section id="info" class="group hidden main">
+			<h2>Info</h2>
+		
+			<p>Hello and welcome! I'm Omar, a Full-Stack Developer living in Podgorica, Montenegro. This is my personal website and portfolio. Here you will find my projects, and something about myself. Enjoy your stay!</p>
+			
+			<h3>Tech Skills</h3>
+			<h4>Front-End</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quaerat perferendis id quidem unde laborum iste debitis, voluptas sunt, necessitatibus reiciendis. Repellendus blanditiis, esse aliquam nobis aut, sequi itaque sint?</p>
+			<h4>Back-End</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dicta debitis, quod, temporibus quia vel sequi aspernatur possimus praesentium molestias.</p>
+		</section><!-- #info -->
+		
+		<!-- Projects -->
+		<section id="projects" class="group hidden">
+			<h2>Projects</h2>
+
+			<p class="text">Here you can find some of my projects</p>
+			<div class="projekti">
+				
+			</div>
+			<p class="link-u-cosku"><i class="fas fa-angle-down"></i></p>
+		</section><!-- #projects -->
+		
+		<!-- Contact -->
+		<section id="contact" class="clearfix hidden">
+			<h2>Contact</h2>
+			<p>Follow / Add me on:</p>
+			<ul class="kontakt_linkovi">
+				<li>
+					<a class="github socialLink" href="https://github.com/omar-adzagic" target="_blank">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+				<li>
+					<a class="codepen socialLink" href="https://codepen.io/omar-adzagic/#" target="_blank">
+						<i class="fab fa-codepen"></i>
+					</a>
+				</li>
+				<li>
+					<a class="facebook socialLink" href="https://www.facebook.com/omar.adzagic" target="_blank">
+						<i class="fab fa-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a class="freecodecamp socialLink" href="https://www.freecodecamp.com/omar.adzagic" target="_blank">
+						<i class="fab fa-free-code-camp"></i>
+					</a>
+				</li>
+				<li>
+					<a class="codewars socialLink" href="https://www.codewars.com/users/omar.adzagic" target="_blank">
+						<?php include('images/codewars.svg'); ?>
+					</a>
+				</li>
+			</ul>
+			<!-- <p>Email: omar.adzagic@gmail.com</p> -->
+			<hr>
+			<div id="message" class="message">
+				<h3>Send Message</h3>
+				<form action="" method="POST" accept-charset="utf-8">
+					<input id="name" name="name" type="text" placeholder="Name">
+					<input id="email" name="email" type="email" placeholder="Email">
+					<textarea id="message-area" name="comment" rows="3" placeholder="Message"></textarea>
+					<button id="send-but" type="button">Send</button> <!-- id="send-but" -->
+				</form>
+			</div><!-- #message -->
+
+		</section><!-- #contact -->
+	</main><!-- #main -->
+
+	<!-- Custom Skripte -->
+	<script src="js/app.js"></script>
+	<script src="js/ease.js"></script>
+	<script src="js/pojavljivanje_elmenata.js"></script>
+</body>
+</html>

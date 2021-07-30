@@ -1,0 +1,55 @@
+/******************************
+ *
+ * FONTOVI
+ *
+ ******************************/
+ 
+@font-face {
+	font-family: "Adelle";
+	src: url('../fonts/Adelle_Reg.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Calluna Sans Regular';
+	src: url('../fonts/CallunaSansRegular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Calluna Sans Bold';
+	src: url('../fonts/CallunaSansBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Freight Text Medium';
+	src: url('../fonts/Freight_Text_Medium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: url('../fonts/Proxima_Nova_Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: "Nexa Rust Script";
+	src: url('../fonts/Nexa_Rust_Script_S_00.otf') format('opentype');
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url('../fonts/Gilroy-Semibold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Blacker';
+	src: url('../fonts/BlackerText-Medium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Rolka Light';
+	src: url('../fonts/RolkaLight.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Alfon Heavy';
+	src: url('../fonts/AlfonHeavy.otf') format('opentype');
+}

@@ -1,0 +1,81 @@
+@keyframes welcome {
+	0% {
+		opacity: 0.5;
+		transform: translateY(0);
+	}
+	50% { transform: translateY(-20px); }
+	100% { transform: translateY(0) opacity: 1; }
+}
+
+@keyframes flip-scale-2-hor-top {
+	0% {
+		opacity: 0.67;
+		transform: rotateZ(-30deg) scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: rotateZ(0deg) scale(1);
+	}
+}
+
+@keyframes spustanje {
+	0% { opacity: 0.5; }
+	100% { opacity: 1; }
+}
+
+@keyframes slide-in-elliptic-left-fwd {
+	0% {
+		-webkit-transform: translateX(-800px) rotateY(30deg) scale(0);
+		transform: translateX(-800px) rotateY(30deg) scale(0);
+		-webkit-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		opacity: 0.5;
+	}
+	100% {
+		-webkit-transform: translateX(0) rotateY(0) scale(1);
+		transform: translateX(0) rotateY(0) scale(1);
+		-webkit-transform-origin: 1500px 50%;
+		transform-origin: 1500px 50%;
+		opacity: 1;
+	}
+}
+
+@keyframes prosiri_projekte {
+	0% { height: 250px; }
+	100% { height: 500px; }
+}
+
+@keyframes skupi_projekte {
+	0% { height: 250px; }
+	100% { height: 500px; }
+}
+
+@keyframes gore {
+	0% { }
+	100% { transform: rotateX(180deg); }
+}
+
+@keyframes dolje {
+	0% { transform: rotateX(180deg); }
+	100% { transform: rotateX(0deg); }
+}
+
+@keyframes bounce {
+	40% { transform: scale(1.4); }
+	60% { transform: scale(1.0); }
+	80% { transform: scale(1.2); }
+	100% { transform: scale(1.0); }
+}
+
+@keyframes scale-up-center {
+	0% {
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+		opacity: 0.5;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+}
